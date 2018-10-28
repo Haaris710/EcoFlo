@@ -16,3 +16,13 @@ It was our hope and belief that such a system could be used to provide a better 
 
 ## System Overview
 ### Arduino Uno as a Sensor
+A small motor was connected to analog input pins on an Arduino Uno. This small motor simulated a load (such as a house in a power grid), where the arduino measured the current and voltage output to the motor, and processed this data into power consumption characteristics, ready to be output over the serial port.
+
+### Raspberry Pi as Grid Controller
+A raspberry pi was used to serve as a controller for a house with one or more sensors. The raspberry pi periodically queried the arduino-based sensor for power consumption information (transmitted over the serial port), and used this information to send API requests to the sample grid server.
+
+### Grid Server
+Our grid server received information from the raspberry pi and used this to send payments using the Interledger protocol.
+
+## Project Outcome
+The innovative use of the interledger protocol, complete with a working model of changing payment packet sizes based on the power consumption of the motor, lead our team to win the First Prize Award of US$10,000 for the Ripple Interledger Challenge at HackHarvard18.
