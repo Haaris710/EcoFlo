@@ -27,8 +27,6 @@ while 1:
         lineString = line.decode("utf-8")
 
         lineString = ''.join(e for e in lineString  if e.isalnum())
-        print(lineString)
-        print(len(lineString))
 
         #Send API request
         dataUrl = url  + lineString
