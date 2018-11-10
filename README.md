@@ -1,4 +1,4 @@
-# HackHarvard
+# HackHarvard: Winner's of Ripple's 1st Place Prize
 
 ## Project Overview
 This source code supplements various hardware components of a prototype, home-installed system which allows users to pay for their electricity usage using a stream of microtransactions, made possible mainly by the Interledger API.
